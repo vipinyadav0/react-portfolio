@@ -5,7 +5,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Unbounded", sans-serif;
 
   /* background-color: #4848ff; */
   animation: body_animation 20s linear infinite alternate;
@@ -51,6 +52,7 @@ body {
   color: #85819f;
   font-size: 20px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .App {

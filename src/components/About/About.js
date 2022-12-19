@@ -5,7 +5,7 @@ import { about } from "../../content/about";
 function About() {
     function AboutMe() {
         return <div className={styles.about_content}>
-            <p>My name is Vipin Yadav, and I am a Software Developer based in Bangalore, KA.
+            <p>My name is Vipin Yadav, and I am a Software Developer based in Bangalore, Karnataka, INDIA.
             </p>
             <p>Programming, developing and technical writing are 3 of my best traits. I really enjoy getting my
                 hands dirty and playing around with code bases. I find it fascinating because the only limit is your
@@ -14,6 +14,15 @@ function About() {
                 This includes <span className={styles.technology}>ReactJS</span> with <span className={styles.technology}>Javascript</span>, <span className={styles.technology}>Django</span> on top of
                 <span className={styles.technology}> Python</span> for web and <span className={styles.technology}>RestAPI</span> on top of <span className={styles.technology}>Django</span>. And also <span className={styles.technology}>MySQL, PostgreSQL</span> for databases.
             </p>
+            <div className="highlights">
+                <h2>Here are some highlights</h2>
+                <ul>
+                    <li><span className={styles.highlights}>Front-End </span>ReactJS on top of Javascript </li>
+                    <li><span className={styles.highlights}>Back-End </span>Django on top Python</li>
+                    <li><span className={styles.highlights}>RestAPI </span>(Django Rest Framework)</li>
+
+                </ul>
+            </div>
 
         </div>
     }
