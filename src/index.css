@@ -1,13 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Varela+Round&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+
+  /* background-color: #4848ff; */
+  animation: body_animation 20s linear infinite alternate;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@keyframes body_animation {
+  0% {
+    background-color: rgb(207, 233, 207);
+  }
+
+  25% {
+    background-color: rgb(255, 224, 224);
+  }
+
+  50% {
+    background-color: rgb(238, 220, 232);
+  }
+
+  75% {
+    background-color: rgb(242, 209, 249);
+  }
+
+  90% {
+    background-color: rgb(206, 248, 203);
+  }
+
+  100% {
+    background-color: rgb(207, 209, 233);
+  }
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  margin: 40px 0 20px 0;
+  color: #2c2851;
+  font-size: 40px;
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 30px;
+  color: #85819f;
+  font-size: 20px;
+  text-align: center;
+}
+
+.App {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 20px;
+
 }

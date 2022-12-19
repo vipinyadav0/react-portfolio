@@ -1,0 +1,104 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: rgba(220, 0, 0, 0.162) solid;
+    align-items: center;
+}
+
+.brand {
+    display: grid;
+    grid-template-columns: 30px auto;
+    max-width: 300px;
+    gap: 10px;
+    place-items: center;
+}
+
+.brand:hover {
+    cursor: pointer;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans;
+    color: #2c2851;
+}
+
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.item {
+    color: #0e0d16;
+    cursor: pointer;
+    /* font-size: 25px; */
+    letter-spacing: 2px;
+}
+
+.item:hover {
+    border-bottom: rgba(213, 34, 34, 0.464) solid 4px;
+    color: #419141;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .toggle {
+        display: block;
+        height: 35px;
+    }
+
+    .navigation {
+        display: grid;
+        gap: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 22px;
+        font-weight: bold;
+        height: 100vh;
+        background-color: #efeff1;
+    }
+
+    .item {
+        width: 100vw;
+    }
+}
+
+.angle_bracket {
+    font-size: 40px;
+    /* margin: 10px; */
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.518) 10%, rgb(0, 255, 225) 40%, rgb(0, 0, 255) 60%, rgb(141, 0, 218) 80%);
+    background-size: 200% auto;
+
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 1s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+h1 {
+    letter-spacing: 10px;
+}
