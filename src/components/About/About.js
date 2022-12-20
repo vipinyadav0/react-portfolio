@@ -9,7 +9,7 @@ function About() {
         return <div className={styles.about_content}>
 
             <p>I have a completed my Bachelor of Technology in CSE in year 2021.
-                But my most of my recent skills have been self taught. I currently have 3 main technical stacks which I work with.
+                But most of my recent skills have been self taught. I currently have 3 main technical stacks which I work with.
                 This includes <span className={styles.technology}>ReactJS</span> with <span className={styles.technology}>Javascript</span>, <span className={styles.technology}>Django</span> on top of
                 <span className={styles.technology}> Python</span> for web and <span className={styles.technology}>RestAPI</span> on top of <span className={styles.technology}>Django</span>. And also <span className={styles.technology}>MySQL, PostgreSQL</span> for databases.
             </p>

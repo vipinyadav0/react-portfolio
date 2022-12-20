@@ -26,7 +26,7 @@ export const HeroArea = () => {
                     <button
                         className={`${styles.button} ${styles.resume}`}>
                         Resume
-                        <span className={styles.image}><img src="/assets/projects/download-25x25.png" alt="" /></span>
+                        <span className={styles.image}><img src="/assets/projects/download-25x25.webp" alt="" /></span>
                     </button>
                 </a>
                 <button
