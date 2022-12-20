@@ -33,9 +33,9 @@ export default function App() {
       </h1>
       <Skills />
       <h1 id="contact" className="title">
-        Let's build something great!
+        Connect with me
       </h1>
-      <p className="description">Connect with me</p>
+      <p className="description">Let's build something great!</p>
       <Contacts />
       <Footer />
     </div>

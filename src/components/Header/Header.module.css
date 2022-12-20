@@ -48,12 +48,12 @@
     cursor: pointer;
     /* font-size: 25px; */
     letter-spacing: 2px;
+    margin: 0 2rem;
 }
 
 .item:hover {
     border-bottom: rgba(213, 34, 34, 0.464) solid 4px;
     color: #419141;
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -71,7 +71,15 @@
         font-size: 22px;
         font-weight: bold;
         height: 100vh;
-        background-color: #efeff1;
+        text-align: center;
+        z-index: 1;
+        background-color: teal;
+        align-content: space-around;
+    }
+
+    .item:hover {
+        width: 100vw;
+        color: rgb(85, 0, 0);
     }
 
     .item {

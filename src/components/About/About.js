@@ -1,6 +1,8 @@
 import styles from "./About.module.css";
 
 import { about } from "../../content/about";
+import { nanoid } from 'nanoid'
+
 
 function About() {
     function AboutMe() {
@@ -46,10 +48,10 @@ function About() {
                             </div>
                             <div className={styles.info}>
                                 {item.college_icon ? <img className={styles.icon} src={item.college_icon} alt="" /> : ""}
-                                {item.work ? item.work.map((text) => {
+                                {item.work ? item.work.map((text, index) => {
                                     return (
                                         <ul>
-                                            <li>{(text)}</li>
+                                            <li key={nanoid()}>{(text)}</li>
                                         </ul>
                                     )
                                 }) : ""}
