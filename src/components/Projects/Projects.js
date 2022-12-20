@@ -34,7 +34,7 @@ export const Projects = () => {
                             })}
                         </div>
                         <div className={styles.link}>
-                            <a href=""><span>Live</span></a>
+                            <a href={project.live_link}><span>Live</span></a>
                             <a href=""><span>GitHub</span></a>
                         </div>
                     </div>

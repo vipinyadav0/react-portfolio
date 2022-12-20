@@ -5,6 +5,7 @@ import Services from "./components/Services/Services";
 import { Projects } from "./components/Projects/Projects";
 import { Contacts } from "./components/Contacts/Contact";
 import { Footer } from "./components/Footer/Footer";
+import { Certificates } from "./components/Certificates/Certificates"
 import Skills from "./components/Skills/Skills";
 
 import "./index.css";
@@ -30,11 +31,11 @@ export default function App() {
       </h1>
       <p className="description">Highlights of my best work</p>
       <Projects />
-      {/* <h1 id="activities" className="title">
-        Activities
+      <h1 id="certificates" className="title">
+        Certificates
       </h1>
-      <p className="description">My interests and volunteering activities</p>
-      <Activities /> */}
+      <p className="description">Certifications</p>
+      <Certificates />
       <h1 id="skills" className="title">
         Skills
       </h1>

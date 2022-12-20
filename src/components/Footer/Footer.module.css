@@ -3,13 +3,18 @@
     width: 100%;
     height: 200px;
     text-align: center;
-    color: #85819f;
+    color: #0f0a0a;
 }
 
 .title {
     color: #2c2851;
     margin-bottom: 10px;
     font-family: "Montserrat", sans;
+}
+
+.wrapper>a {
+    text-decoration: none;
+    color: black;
 }
 
 .socials {
