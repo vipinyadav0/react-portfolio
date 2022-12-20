@@ -3,16 +3,6 @@ import styles from "./Projects.module.css";
 import { projects } from "../../content/projects";
 
 export const Projects = () => {
-    function test() {
-        projects.map((pro) => {
-            // console.log(pro);
-            console.log(pro.technologies.map((el) => (el)).join(" "))
-
-        })
-    }
-    test()
-
-
     return (
         <section className={styles.wrapper}>
             {projects.map((project, index) => {
@@ -34,8 +24,8 @@ export const Projects = () => {
                             })}
                         </div>
                         <div className={styles.link}>
-                            <a href={project.live_link}><span>Live</span></a>
-                            <a href=""><span>GitHub</span></a>
+                            <a href={project.github} target="_blank"><span>GitHub</span></a>
+                            {project.live_link ? <a href={project.live_link} target="_blank"><span>Live</span></a> : ""}
                         </div>
                     </div>
                 );

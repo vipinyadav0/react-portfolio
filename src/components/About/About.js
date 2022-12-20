@@ -11,6 +11,9 @@ function About() {
                 This includes <span className={styles.technology}>ReactJS</span> with <span className={styles.technology}>Javascript</span>, <span className={styles.technology}>Django</span> on top of
                 <span className={styles.technology}> Python</span> for web and <span className={styles.technology}>RestAPI</span> on top of <span className={styles.technology}>Django</span>. And also <span className={styles.technology}>MySQL, PostgreSQL</span> for databases.
             </p>
+            <p>Looking forward to sharpening my skills in a challenging environment. I guarantee enthusiasm in work and fulfilling my projects with inexpressible effort.
+
+            </p>
             <div className="highlights">
                 <h2>Here are some highlights</h2>
                 <ul>
@@ -28,19 +31,35 @@ function About() {
         <div className={styles.content}>
             <section className={styles.wrapper}>
                 <AboutMe />
+                <h1 id="services" className="title">
+                    Professional Experience
+                </h1>
+
                 {about.map((item, index) => {
                     return (
                         <div className={styles.card} key={index}>
                             <div className={styles.info}>
-                                <h1 className={styles.title}>{item.title}</h1>
+                                {item.icon ? <img className={styles.icon} src={item.icon} alt="" /> : ""}
+                                <h2 className={styles.title}>{item.title}</h2>
+                                {item.company ? <h3 className={styles.title}>{item.company}</h3> : <h3 className={styles.title}>{item.major}</h3>}
                                 <p className={styles.description}>{item.duration}</p>
                             </div>
                             <div className={styles.info}>
-                                <img className={styles.icon} src={item.icon} alt="" />
+                                {item.college_icon ? <img className={styles.icon} src={item.college_icon} alt="" /> : ""}
+                                {item.work ? item.work.map((text) => {
+                                    return (
+                                        <ul>
+                                            <li>{(text)}</li>
+                                        </ul>
+                                    )
+                                }) : ""}
+
                             </div>
                         </div>
                     );
-                })}
+                })
+                }
+
             </section>
         </div>
     );

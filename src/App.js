@@ -5,10 +5,9 @@ import Services from "./components/Services/Services";
 import { Projects } from "./components/Projects/Projects";
 import { Contacts } from "./components/Contacts/Contact";
 import { Footer } from "./components/Footer/Footer";
-import { Certificates } from "./components/Certificates/Certificates"
 import Skills from "./components/Skills/Skills";
 
-import "./index.css";
+import "./App.css";
 
 export default function App() {
   return (
@@ -18,32 +17,25 @@ export default function App() {
       <h1 id="about" className="title">
         About me
       </h1>
-
       <About />
-
       <h1 id="services" className="title">
-        My services
+        My Passion
       </h1>
-      <p className="description">How can I help you</p>
+      <p className="description">How can I help you?</p>
       <Services />
       <h1 id="projects" className="title">
         Projects
       </h1>
       <p className="description">Highlights of my best work</p>
       <Projects />
-      <h1 id="certificates" className="title">
-        Certificates
-      </h1>
-      <p className="description">Certifications</p>
-      <Certificates />
       <h1 id="skills" className="title">
         Skills
       </h1>
       <Skills />
       <h1 id="contact" className="title">
-        Let's connect
+        Let's build something great!
       </h1>
-      <p className="description">I'm available to work!</p>
+      <p className="description">Connect with me</p>
       <Contacts />
       <Footer />
     </div>

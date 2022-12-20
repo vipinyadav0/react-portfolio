@@ -1,17 +1,17 @@
 export const services = [
     {
-        icon: "/assets/services/color-wheel.png",
-        title: "Web design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        icon: "/assets/services/color-wheel.webp",
+        title: "Web Developer",
+        description: "Got your projects running on ReactJS, Django or both? I can add functionality to your app as per the requirements."
     },
     {
-        icon: "/assets/services/photography.png",
+        icon: "/assets/services/ui.webp",
+        title: "UI/UX using Figma",
+        description: "Learning never stops. I love exploring new things and designing logos usign Figma."
+    },
+    {
+        icon: "/assets/services/photography.webp",
         title: "Photography",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        description: "A part from using my Laptop, I love photography, capturing moment."
     },
-    {
-        icon: "/assets/services/ui.png",
-        title: "UI/UX expert",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    }
 ];
